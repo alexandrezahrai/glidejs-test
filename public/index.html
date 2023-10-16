@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glide.js Test</title>
+    <!-- Required Core Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="/node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+
+    <!-- Optional Theme Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="/node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
+    <!-- Tailwind Output -->
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container py-[60px] lg:py-[100px]">
+        <div class="glide border p-4">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide bg-primary">0</li>
+              <li class="glide__slide bg-secondary">1</li>
+              <li class="glide__slide bg-primary">2</li>
+              <li class="glide__slide bg-secondary">3</li>
+              <li class="glide__slide bg-primary">4</li>
+              <li class="glide__slide bg-secondary">5</li>
+            </ul>
+          </div>
+
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <span class="sr-only">Previous</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M0 12l10.975 11 2.848-2.828-6.176-6.176H24v-3.992H7.646l6.176-6.176L10.975 1 0 12z"
+                ></path>
+              </svg>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <span class="sr-only">Next</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

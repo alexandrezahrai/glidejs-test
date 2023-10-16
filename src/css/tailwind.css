@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply mx-auto;
+}
+
+/* Carousel */
+.glide__slide {
+  @apply border;
+  @apply h-[150px] leading-[150px] text-center;
+  @apply rounded-lg;
+}
+
+.glide__arrows {
+  @apply h-[100px] relative;
+}
+
+.glide__arrow {
+  @apply p-3;
+  @apply rounded-full border-primary shadow-none hover:border-secondary hover:shadow-lg;
+}
+
+.glide__arrow--left {
+  @apply lg:left-[40%];
+}
+
+.glide__arrow--right {
+  @apply lg:right-[40%];
+}
